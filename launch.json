@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "SOC Framework - Demo",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/soc_hashing_framework/main.py",
+            "args": [],
+            "cwd": "${workspaceFolder}/soc_hashing_framework",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "SOC Framework - Live 30s",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/soc_hashing_framework/main.py",
+            "args": [
+                "--live",
+                "--duration",
+                "30"
+            ],
+            "cwd": "${workspaceFolder}/soc_hashing_framework",
+            "console": "integratedTerminal"
+        }
+    ]
+}

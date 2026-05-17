@@ -1,0 +1,46 @@
+======================================================================
+  SOC CRYPTOGRAPHIC HASHING FRAMEWORK — SUMMARY REPORT
+======================================================================
+
+BENCHMARK RESULTS
+----------------------------------------
+  MD5         throughput=   336,092 H/s  avg_latency=     2.8 µs  p95=     4.0 µs
+  SHA-256     throughput=   474,631 H/s  avg_latency=     2.0 µs  p95=     3.1 µs
+  SHA3-256    throughput=   316,650 H/s  avg_latency=     3.0 µs  p95=     5.0 µs
+  BLAKE2b     throughput=   365,836 H/s  avg_latency=     2.6 µs  p95=     3.7 µs
+  BLAKE3      throughput=   367,024 H/s  avg_latency=     2.6 µs  p95=     3.8 µs
+
+PERFORMANCE PROFILING
+----------------------------------------
+  MD5         throughput=    84,509 H/s  CPU= 96.8%  mem_delta=+2.6836 MB
+  SHA-256     throughput=    78,193 H/s  CPU=101.8%  mem_delta=+2.0977 MB
+  SHA3-256    throughput=    71,186 H/s  CPU= 98.8%  mem_delta=+1.0039 MB
+  BLAKE2b     throughput=    64,735 H/s  CPU=103.4%  mem_delta=+1.0078 MB
+  BLAKE3      throughput=    62,265 H/s  CPU= 95.1%  mem_delta=+0.0000 MB
+
+INTEGRITY VERIFICATION
+----------------------------------------
+  MD5         passed=7500  failed=0  total=7500
+  SHA-256     passed=7500  failed=0  total=7500
+  SHA3-256    passed=7500  failed=0  total=7500
+  BLAKE2b     passed=7500  failed=0  total=7500
+  BLAKE3      passed=7500  failed=0  total=7500
+
+TAMPER DETECTION
+----------------------------------------
+  Methodology: 2400/7500 entries tampered (32.0%) — remainder left clean
+  MD5         TP=2400  TN=5100  FP=0  FN=0  Acc=100.00%  Prec=100.00%  Rec=100.00%  F1=1.0000  mean_resp=12.3 µs  p95_resp=16.6 µs
+  SHA-256     TP=2400  TN=5100  FP=0  FN=0  Acc=100.00%  Prec=100.00%  Rec=100.00%  F1=1.0000  mean_resp=11.3 µs  p95_resp=15.1 µs
+  SHA3-256    TP=2400  TN=5100  FP=0  FN=0  Acc=100.00%  Prec=100.00%  Rec=100.00%  F1=1.0000  mean_resp=12.2 µs  p95_resp=16.0 µs
+  BLAKE2b     TP=2400  TN=5100  FP=0  FN=0  Acc=100.00%  Prec=100.00%  Rec=100.00%  F1=1.0000  mean_resp=11.6 µs  p95_resp=15.1 µs
+  BLAKE3      TP=2400  TN=5100  FP=0  FN=0  Acc=100.00%  Prec=100.00%  Rec=100.00%  F1=1.0000  mean_resp=12.2 µs  p95_resp=15.7 µs
+
+INGESTION IMPACT ANALYSIS
+----------------------------------------
+  MD5         baseline= 3,471,998 eps  hashed=   380,349 eps  overhead=+89.0%
+  SHA-256     baseline= 3,471,998 eps  hashed=   389,562 eps  overhead=+88.8%
+  SHA3-256    baseline= 3,471,998 eps  hashed=   309,285 eps  overhead=+91.1%
+  BLAKE2b     baseline= 3,471,998 eps  hashed=   373,271 eps  overhead=+89.2%
+  BLAKE3      baseline= 3,471,998 eps  hashed=   359,491 eps  overhead=+89.7%
+
+======================================================================

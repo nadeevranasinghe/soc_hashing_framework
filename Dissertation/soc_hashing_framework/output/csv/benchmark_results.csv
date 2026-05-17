@@ -1,0 +1,6 @@
+algorithm,display_name,entry_count,iterations,mean_throughput_hps,median_throughput_hps,stdev_throughput_hps,mean_latency_us,median_latency_us,stdev_latency_us,p95_latency_us,min_latency_us,max_latency_us
+md5,MD5,7500,9,336092.2,338220.24,45048.56,2.839,2.3,1.909,4.0,2.0,203.3
+sha256,SHA-256,7500,9,474630.52,467811.45,25665.86,1.955,1.8,1.06,3.1,1.6,160.1
+sha3_256,SHA3-256,7500,9,316649.84,329499.42,32982.84,3.037,2.7,3.419,5.0,2.5,726.6
+blake2b,BLAKE2b,7500,9,365836.23,383816.26,34306.17,2.583,2.4,1.252,3.7,2.0,129.0
+blake3,BLAKE3,7500,9,367023.94,380199.22,37993.94,2.594,2.3,4.897,3.8,2.1,991.3
